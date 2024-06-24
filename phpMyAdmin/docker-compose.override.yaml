@@ -1,0 +1,26 @@
+version: '3.8'
+
+services: 
+    phpmyadmin:
+        container_name: phpMyAdmin_CLI
+        ports:
+         - '8081:80'
+        restart: always
+        environment:
+          PMA_HOST: database
+          PMA_USER: wordpress
+          PMA_PASSWORD: apostolos
+        deploy:
+          resources:
+            limits:
+              cpus: '0.10'
+              memory: 200M
+            reservations:
+              cpus: '0.05'
+              memory: 50M         
+ 
+        networks:
+          - vlab_network
+volumes:
+    data:
+      driver: local

@@ -1,29 +1,12 @@
 version: '3.8'
 
 services:
-	wordpress:
-		container_name: phpMyAdmin
-		ports:
-			- '8080:80'
-		restart: always
-		volumes:
-			- /wp_data:/var/www/html
-		environment:
-			WORDPRESS_DB_HOST: mysql
-			WORDPRESS_DB_USER: cloud
-			WORDPRESS_DB_PASSWORD: apostolos
-			WORDPRESS_DB_NAME: wordpress
-		deploy:
-			resources:
-				limits:
-					cpus: '0.10'
-					memory: 500M
-				reservations:
-					cpus: '0.05'
-					memory: 50M
-		networks:
-			- vlab_network
 
-volumes:
-	data:
-		driver: local
+  wordpress:
+    image: wordpress:latest
+   
+      
+networks:
+    vlab_network:
+        name: vlab_network
+        driver: bridge
