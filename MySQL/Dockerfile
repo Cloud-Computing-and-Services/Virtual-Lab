@@ -1,0 +1,8 @@
+FROM mysql:latest
+
+ENV MYSQL_DATABASE=wordpress
+ENV MYSQL_USER=cloud
+ENV MYSQL_PASSWORD=apostolos
+ENV MYSQL_ROOT_PASSWORD=apostolos
+
+EXPOSE 3306
