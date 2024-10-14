@@ -92,7 +92,6 @@ networks:
     vlab_network:
         name: vlab_network
         driver: bridge
-
 </code></pre>
 <ul>
 <li>We run the WordPress service using the WordPress Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
@@ -109,8 +108,8 @@ networks:
 <pre><code>version: '3.8'
 
 services: 
-database:
-container_name: mysql_database
+	database:
+	container_name: mysql_database
 ports:
 - '3306:3306'
 restart: always
@@ -229,6 +228,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDg1NzcyOCwtMTYyMjMzMDYxMSwtMT
+eyJoaXN0b3J5IjpbLTU3NDA4MTMyNiwtMTYyMjMzMDYxMSwtMT
 M2MDgyMDY5Nl19
 -->
