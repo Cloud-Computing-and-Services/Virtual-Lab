@@ -45,32 +45,32 @@
 <pre><code>
 version: '3.8'
 services: 
-wordpress:
-container_name: wordpress
+    wordpress:
+        container_name: wordpress
+        ports:
+         - '8080:80'
+        restart: always
+        volumes:
+         - /wp_data:/var/www/html
+        environment:
+         WORDPRESS_DB_HOST: database
+         WORDPRESS_DB_USER: wordpress
+         WORDPRESS_DB_PASSWORD: apostolos
+         WORDPRESS_DB_NAME: wordpress
+        deploy:
+          resources:
+            limits:
+              cpus: '0.10'
+              memory: 500M
+            reservations:
+              cpus: '0.05'
+              memory: 50M 
+        networks:
+          - vlab_network
+volumes:
+    data:
+      driver: local
 
-ports:
-- '8080:80'
-restart: always
-volumes:
-- /wp_data:/var/www/html
-environment:
-WORDPRESS_DB_HOST: database
-WORDPRESS_DB_USER: wordpress
-WORDPRESS_DB_PASSWORD: apostolos
-WORDPRESS_DB_NAME: wordpress
-deploy:
-resources:
-limits:
-cpus: '0.10'
-memory: 500M
-reservations:
-cpus: '0.05'
-memory: 50M 
-networks:
-- vlab_network
-volumes:
-data:
-driver: local
 </code></pre>
 <ul>
 <li><strong><strong>container_name</strong>: Specify the name of the WordPress container as "wordpress".</li>
@@ -229,6 +229,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTk2NDIxMTAsLTE2MjIzMzA2MTEsLT
-EzNjA4MjA2OTZdfQ==
+eyJoaXN0b3J5IjpbMTI4MzQ5OTQ1NCwtMTYyMjMzMDYxMSwtMT
+M2MDgyMDY5Nl19
 -->
