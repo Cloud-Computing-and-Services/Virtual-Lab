@@ -83,8 +83,7 @@ volumes:
 </ul>
 
 <p><strong>docker-compose.yaml</strong></p>
-<pre><code>
-version: '3.8'
+<pre><code>version: '3.8'
 services:
   wordpress:
     image: wordpress:latest
@@ -92,6 +91,7 @@ networks:
     vlab_network:
         name: vlab_network
         driver: bridge
+
 </code></pre>
 <ul>
 <li>We run the WordPress service using the WordPress Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
@@ -108,34 +108,35 @@ networks:
 <pre><code>version: '3.8'
 
 services: 
-	database:
-	container_name: mysql_database
-ports:
-- '3306:3306'
-restart: always
+    database:
+        container_name: mysql_database
+        ports:
+         - '3306:3306'
+        restart: always
+        volumes:
+         - /db_data:/var/lib/mysql
+        environment:
+         MYSQL_ROOT_PASSWORD: apostolos
+         MYSQL_DATABASE: wordpress
+         MYSQL_USER: wordpress
+         MYSQL_PASSWORD: apostolos
+        
+        deploy:
+         resources:
+            limits:
+              cpus: '0.10'
+              memory: 500M
+            reservations:
+              cpus: '0.05'
+              memory: 50M         
+        
+        networks:
+          - vlab_network
+
 volumes:
-- /db_data:/var/lib/mysql
-environment:
-MYSQL_ROOT_PASSWORD: apostolos
-MYSQL_DATABASE: wordpress
-MYSQL_USER: wordpress
-MYSQL_PASSWORD: apostolos
+    data:
+        driver: local
 
-deploy:
-resources:
-limits:
-cpus: '0.10'
-memory: 500M
-reservations:
-cpus: '0.05'
-memory: 50M 
-
-networks:
-- vlab_network
-
-volumes:
-data:
-driver: local
 
 </code></pre>
 <ul>
@@ -228,6 +229,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDA4MTMyNiwtMTYyMjMzMDYxMSwtMT
-M2MDgyMDY5Nl19
+eyJoaXN0b3J5IjpbLTEzNjQ4MjMxOTgsLTE2MjIzMzA2MTEsLT
+EzNjA4MjA2OTZdfQ==
 -->
