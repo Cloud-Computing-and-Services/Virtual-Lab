@@ -42,8 +42,7 @@
 <p><strong>Configuration</strong></p>
 <p>To implement the WordPress container, we use two Docker Compose files: <code>docker-compose.yaml</code> and <code>docker-compose.override.yaml</code>.</p>
 <p><strong>docker-compose.override.yaml</strong></p>
-<pre><code>
-version: '3.8'
+<pre><code>version: '3.8'
 services: 
     wordpress:
         container_name: wordpress
@@ -84,7 +83,7 @@ volumes:
 
 <p><strong>docker-compose.yaml</strong></p>
 
-<pre><>version: '3.8'
+<pre><code>version: '3.8'
 
 services:
 
@@ -140,8 +139,6 @@ services:
 volumes:
     data:
         driver: local
-
-
 </code></pre>
 <ul>
 <li><strong>container_name</strong>: Specify the name of the MySQL container as "mysql".</li>
@@ -166,7 +163,6 @@ networks:
     vlab_network:
         driver: bridge
         external: true
-
 </code></pre>
 <ul>
 <li>We run the MySQL service using the MySQL Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
@@ -181,8 +177,7 @@ networks:
 
 <strong>docker-compose.override.yaml</strong></p>
 
-<pre><code>
-version: '3.8'
+<pre><code>version: '3.8'
 
 services: 
     phpmyadmin:
@@ -208,7 +203,6 @@ services:
 volumes:
     data:
       driver: local
-
 </code></pre>
 <ul>
 <li><strong>container_name</strong>: Specify the name of the phpMyAdmin container as "phpmyadmin".</li>
@@ -220,8 +214,7 @@ volumes:
 </ul>
 <p><strong>docker-compose.yaml</strong></p>
 
-<pre><code>
-version: '3.8'
+<pre><code>version: '3.8'
 
 services:
 
@@ -233,15 +226,14 @@ networks:
     vlab_network:
         driver: bridge
         external: true
-
 </code></pre>
 <ul>
 <li>We run the phpMyAdmin service using the phpMyAdmin Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
-<li>With <strong>"networks"</strong> we connect the phpMyAdmin container to the "vlab_network" network. We define the network name separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"</li>.
+<li>With <strong>"networks"</strong> we connect the phpMyAdmin container to the "vlab_network" network. We define the network name separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"</li>
 </ul>
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzcwNjg3NywxNjI1NjA0NDc1LC0xNT
-QyMTE3NDg2LC0xNjIyMzMwNjExLC0xMzYwODIwNjk2XX0=
+eyJoaXN0b3J5IjpbNDI3MDEzMTM4LDE2MjU2MDQ0NzUsLTE1ND
+IxMTc0ODYsLTE2MjIzMzA2MTEsLTEzNjA4MjA2OTZdfQ==
 -->
