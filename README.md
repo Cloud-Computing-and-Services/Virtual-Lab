@@ -176,59 +176,66 @@ networks:
 </ul>
 <p>Together, these Docker Compose files configure and deploy the MySQL container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 <hr>
-<h4 id="phpmyadmin-container">phpMyAdmin Container</h4>.
+<h4 id="phpmyadmin-container">phpMyAdmin Container</h4>
 <p>The phpMyAdmin container provides a graphical interface for managing the MySQL database.</p>
-<p><strong>Configuration</strong></p>.
+<p><strong>Configuration</strong></p>
 <p>To implement the phpMyAdmin container, we use two Docker Compose files: <code>docker-compose.yaml</code> and <code>docker-compose.override.yaml</code>.<br>
+
 <strong>docker-compose.override.yaml</strong></p>
-<pre><code>version: '3.8'
+
+<pre><code>
+version: '3.8'
 
 services: 
-phpmyadmin:
-container_name: phpMyAdmin_CLI
-ports:
-- '8081:80'
-restart: always
-environment:
-PMA_HOST: database
-PMA_USER: wordpress
-PMA_PASSWORD: apostolos
-deploy:
-resources:
-limits:
-cpus: '0.10'
-memory: 200M
-reservations:
-cpus: '0.05'
-memory: 50M 
-
-networks:
-- vlab_network
+    phpmyadmin:
+        container_name: phpMyAdmin_CLI
+        ports:
+         - '8081:80'
+        restart: always
+        environment:
+          PMA_HOST: database
+          PMA_USER: wordpress
+          PMA_PASSWORD: apostolos
+        deploy:
+          resources:
+            limits:
+              cpus: '0.10'
+              memory: 200M
+            reservations:
+              cpus: '0.05'
+              memory: 50M         
+ 
+        networks:
+          - vlab_network
 volumes:
-data:
-driver: local
+    data:
+      driver: local
+
 </code></pre>
 <ul>
-<li><strong><strong>container_name</strong>: Specify the name of the phpMyAdmin container as "phpmyadmin".</li>
+<li><strong>container_name</strong>: Specify the name of the phpMyAdmin container as "phpmyadmin".</li>
 <li><strong>ports</strong>: We map port 8081 on the host to port 80 on the container, allowing access to phpMyAdmin via <a href="http://localhost:8081">http://localhost:8081</a>.</li>
-<li><strong><strong>restart</strong>: We ensure that the container restarts automatically if it stops or encounters an error.</li>
+<li><strong>restart</strong>: We ensure that the container restarts automatically if it stops or encounters an error.</li>
 <li><strong>environment</strong>: With the environment variables we specify the connection parameters to the MySQL container.</li>
 <li><strong>deploy</strong>: We set the resource limits for the container, including CPU and memory constraints.</li>
 <li><strong>network</strong>: We connect the phpMyAdmin container to the "vlab_network" network.</li>
-</ul>.
-<p><strong>docker-compose.yaml</strong></p>.
-<pre><code>version: '3.8'
+</ul>
+<p><strong>docker-compose.yaml</strong></p>
+
+<pre><code>
+version: '3.8'
 
 services:
 
-phpmyadmin:
-image: phpmyadmin/phpmyadmin
-
-
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+   
+      
 networks:
-vlab_network:
-driver: bridge
-external: true
+    vlab_network:
+        driver: bridge
+        external: true
+
 </code></pre>
 <ul>
 <li>We run the phpMyAdmin service using the phpMyAdmin Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
@@ -237,6 +244,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM3MzU3MTc4LC0xNjIyMzMwNjExLC0xMz
-YwODIwNjk2XX0=
+eyJoaXN0b3J5IjpbMTc5Mzc2NzY5NCwtMTYyMjMzMDYxMSwtMT
+M2MDgyMDY5Nl19
 -->
