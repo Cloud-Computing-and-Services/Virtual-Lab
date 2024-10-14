@@ -3,7 +3,7 @@
 
 ---
 
-<p><img src="https://x2e5r7b9.rocketcdn.me/wp-content/uploads/2020/02/LOGO-STAMP-white.png" alt="enter image description here"></p>
+<p><img src="https://x2e5r7b9.rocketcdn.me/wp-content/uploads/2020/02/LOGO-STAMP-whiteupload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/255px-Flag_of_Greece.svg.png" alt="enter image description here"></p>
 <h2 id="τμήμα-μηχανικών-πληροφορικής-και-υπολογιστών">Τμήμα Μηχανικών Πληροφορικής και Υπολογιστών</h2>
 <h3 id="εργαστήριο-υπολογιστικής-νέφους-και-υπηρεσιών">Εργαστήριο Υπολογιστικής Νέφους και Υπηρεσιών</h3>
 <h3 id="δημιουργία-εικονικού-εργαστηρίου">Δημιουργία Εικονικού Εργαστηρίου</h3>
@@ -227,3 +227,6 @@ networks:
 </ul>
 <p>Μαζί, αυτά τα αρχεία Docker Compose διαμορφώνουν και αναπτύσσουν το container του phpMyAdmin, διασφαλίζοντας ότι είναι συνδεδεμένο στο καθορισμένο δίκτυο και έχει πρόσβαση στους απαραίτητους πόρους και volumes.</p>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5OTUyMzE3NTVdfQ==
+-->
