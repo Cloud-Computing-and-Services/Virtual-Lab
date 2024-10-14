@@ -166,3 +166,7 @@ exit 0
 </ol>
 <p>To summarize, with the above shell scripts we can create or remove the containers of the 3 services of the application. Removing the containers includes removing the network that the containers communicate with. The data volumes remain as they are.</p>
 
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTMxODA1NDU2OF19
+-->
