@@ -83,14 +83,20 @@ volumes:
 </ul>
 
 <p><strong>docker-compose.yaml</strong></p>
+
 <pre><code>version: '3.8'
+
 services:
+
   wordpress:
     image: wordpress:latest
+   
+      
 networks:
     vlab_network:
         name: vlab_network
         driver: bridge
+
 
 </code></pre>
 <ul>
@@ -140,31 +146,33 @@ volumes:
 
 </code></pre>
 <ul>
-<li><strong><strong>container_name</strong>: Specify the name of the MySQL container as "mysql".</li>
+<li><strong>container_name</strong>: Specify the name of the MySQL container as "mysql".</li>
 <li><strong>ports</strong>: We map the host port 3306 to the container port 3306, allowing access to the database through the MySQL client.</li>
 <li><strong>restart</strong>: We ensure that the container restarts automatically if it stops or encounters an error.</li>
 <li><strong>volumes</strong>: We create a volume named "/db_data" and mount it in the container's "/var/lib/mysql" directory. This allows the database data to be stored outside the container, preserving the data even if the container is stopped or removed.</li>
-<li><strong><strong>environment</strong>: The environment variables are used to specify the database parameters.</li>
+<li><strong>environment</strong>: The environment variables are used to specify the database parameters.</li>
 <li><strong>deploy</strong>: We set the resource limits for the container, including CPU and memory constraints.</li>
 <li><strong>network</strong>: We connect the MySQL container to the "vlab_network" network.</li>
-</ul>.
-<p><strong>docker-compose.yaml</strong></p>.
+</ul>
+<p><strong>docker-compose.yaml</strong></p>
+
 <pre><code>version: '3.8'
 
 services:
 
-database:
-image: mysql:5.7
-
-
+  database:
+    image: mysql:5.7
+   
+      
 networks:
-vlab_network:
-driver: bridge
-external: true
+    vlab_network:
+        driver: bridge
+        external: true
+
 </code></pre>
 <ul>
 <li>We run the MySQL service using the MySQL Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
-<li>With <strong>"networks"</strong> we connect the MySQL container to the "vlab_network" network. We define the network name separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"</li>.
+<li>With <strong>"networks"</strong> we connect the MySQL container to the "vlab_network" network. We define the network name separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"</li>
 </ul>
 <p>Together, these Docker Compose files configure and deploy the MySQL container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 <hr>
@@ -229,6 +237,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQ4MjMxOTgsLTE2MjIzMzA2MTEsLT
-EzNjA4MjA2OTZdfQ==
+eyJoaXN0b3J5IjpbNDM3MzU3MTc4LC0xNjIyMzMwNjExLC0xMz
+YwODIwNjk2XX0=
 -->
