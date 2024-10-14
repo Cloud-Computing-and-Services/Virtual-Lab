@@ -23,7 +23,7 @@
 <ul>
 <li><strong>Individual Networks</strong>: Each virtual lab creates its own network, allowing secure communication between containers.</li>
 <li><strong>Data Preservation</strong>: Provides storage for persistent data management, ensuring that data is preserved even if containers are restarted or stopped.</li>
-<li><strong>Automatic Service Startup and Shutdown</strong>: Use shell scripts to automatically run and shutdown services without manual intervention.</li>.
+<li><strong>Automatic Service Startup and Shutdown</strong>: Use shell scripts to automatically run and shutdown services without manual intervention.</li>
 <li><strong>Service Isolation</strong>: Each service runs in a separate container. WordPress is the main application, while MySQL manages the database. phpMyAdmin provides a graphical interface to manage the MySQL database.</li> The server is the main server.
 <li><strong>Resource Management</strong>: Configure resources for optimal allocation and prevent memory problems. Docker Compose files define resource limits for all containers.</li>
 </ul>
@@ -244,6 +244,6 @@ networks:
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5Mzc2NzY5NCwtMTYyMjMzMDYxMSwtMT
-M2MDgyMDY5Nl19
+eyJoaXN0b3J5IjpbLTE1NDIxMTc0ODYsLTE2MjIzMzA2MTEsLT
+EzNjA4MjA2OTZdfQ==
 -->
