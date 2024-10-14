@@ -81,6 +81,7 @@ volumes:
 <li><strong>deploy</strong>: We set the resource limits for the container, including CPU and memory limitations.</li>
 <li><strong>network</strong>: We connect the WordPress container to the "wordpressNetwork" network.</li>
 </ul>
+
 <p><strong>docker-compose.yaml</strong></p>
 <pre><code>
 version: '3.8'
@@ -95,14 +96,15 @@ networks:
 </code></pre>
 <ul>
 <li>We run the WordPress service using the WordPress Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
-<li>With <strong>"networks"</strong> we connect the WordPress container to the "vlab_network" network. We name the network separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"</li>.
+<li>With <strong>"networks"</strong> we connect the WordPress container to the "vlab_network" network. We name the network separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"</li>
 </ul>
 <p>Together, these Docker Compose files configure and deploy the WordPress container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 <hr>
-<h4 id="mysql-container">MySQL Container</h4>.
+<h4 id="mysql-container">MySQL Container</h4>
 <p>The MySQL container hosts the database used by WordPress.</p>
 <p><strong>Configuration</strong></p>
 <p>To implement the MySQL container, we use two Docker Compose files: <code>docker-compose.yaml</code> and <code>docker-compose.override.yaml</code>.<br>
+
 <strong>docker-compose.override.yaml</strong></p>
 <pre><code>version: '3.8'
 
@@ -227,6 +229,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2MjAzMzQ2LC0xNjIyMzMwNjExLC0xMz
-YwODIwNjk2XX0=
+eyJoaXN0b3J5IjpbLTIxMDg1NzcyOCwtMTYyMjMzMDYxMSwtMT
+M2MDgyMDY5Nl19
 -->
