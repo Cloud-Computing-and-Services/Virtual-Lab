@@ -18,32 +18,32 @@
 <h3 id="introduction">Introduction</h3>
 <p>This project was created for the cloud computing lab and provides a virtual lab environment using Docker. Its purpose is to facilitate the development and management of various applications by providing many features and services. This README file briefly describes the project, its features and the services used.</p>
 <hr>
-<h3 id="features">Features</h3>.
+<h3 id="features">Features</h3>
 <p>The Docker project has the following features:</p>
 <ul>
 <li><strong>Individual Networks</strong>: Each virtual lab creates its own network, allowing secure communication between containers.</li>
 <li><strong>Data Preservation</strong>: Provides storage for persistent data management, ensuring that data is preserved even if containers are restarted or stopped.</li>
 <li><strong>Automatic Service Startup and Shutdown</strong>: Use shell scripts to automatically run and shutdown services without manual intervention.</li>.
 <li><strong>Service Isolation</strong>: Each service runs in a separate container. WordPress is the main application, while MySQL manages the database. phpMyAdmin provides a graphical interface to manage the MySQL database.</li> The server is the main server.
-<li><strong>Resource Management</strong>: Configure resources for optimal allocation and prevent memory problems. Docker Compose files define resource limits for all containers.</li>.
-</ul>.
+<li><strong>Resource Management</strong>: Configure resources for optimal allocation and prevent memory problems. Docker Compose files define resource limits for all containers.</li>
+</ul>
 <hr>
-<h3 id="used-services">Used Services</h3>.
+<h3 id="used-services">Used Services</h3>
 <p>The Docker project uses the following services:</p>
 <ul>
 <li><strong>WordPress</strong>.
 <li><strong>MySQL</strong>: A popular open source relational database management system.</li>
-<li><strong><strong>phpMyAdmin</strong>: A graphical interface for MySQL database management, simplifying database administration.</li>.
+<li><strong>phpMyAdmin</strong>: A graphical interface for MySQL database management, simplifying database administration.</li>
 </ul>
 <hr>
-<h3 id="detailed-description-of-services">Detailed Description of Services</h3>.
-<h4 id="wordpress-container">WordPress Container</h4>.
+<h3 id="detailed-description-of-services">Detailed Description of Services</h3>
+<h4 id="wordpress-container">WordPress Container</h4>
 <p>The WordPress container is the main page for the project, allowing the creation and management of web pages.</p>
-<p><strong>Configuration</strong></p>.
+<p><strong>Configuration</strong></p>
 <p>To implement the WordPress container, we use two Docker Compose files: <code>docker-compose.yaml</code> and <code>docker-compose.override.yaml</code>.</p>
 <p><strong>docker-compose.override.yaml</strong></p>
-<pre><code>version: '3.8'
-
+<pre><code>
+version: '3.8'
 services: 
 wordpress:
 container_name: wordpress
@@ -229,6 +229,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjIzMzA2MTEsLTEzNjA4MjA2OTZdfQ
-==
+eyJoaXN0b3J5IjpbLTE0NTk2NDIxMTAsLTE2MjIzMzA2MTEsLT
+EzNjA4MjA2OTZdfQ==
 -->
