@@ -5,7 +5,7 @@
 ---
 
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/255px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" alt="enter image description here"></p>
-<h2 id="department-engineering-informatics-and-computers">Department of Computer Engineering and Computer Science</h2>
+<h2 id="department-engineering-informatics-and-computers">Department of Informatics and Computer Engineering</h2>
 <h3 id="cloud-computing-and-services laboratory">Cloud Computing and Services Laboratory</h3>
 <h3 id="create-virtual-lab">Create Virtual Lab</h3>
 <hr>
@@ -235,6 +235,6 @@ networks:
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc4OTA3OTEyLDE2MjU2MDQ0NzUsLTE1ND
-IxMTc0ODYsLTE2MjIzMzA2MTEsLTEzNjA4MjA2OTZdfQ==
+eyJoaXN0b3J5IjpbLTM4MzY5MjMxOCwxNjI1NjA0NDc1LC0xNT
+QyMTE3NDg2LC0xNjIyMzMwNjExLC0xMzYwODIwNjk2XX0=
 -->
