@@ -84,7 +84,7 @@ volumes:
 
 <p><strong>docker-compose.yaml</strong></p>
 
-<pre><code class="language-yaml">version: '3.8'
+<pre><code class="yaml">version: '3.8'
 
 services:
 
@@ -244,6 +244,6 @@ networks:
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNTYwNDQ3NSwtMTU0MjExNzQ4NiwtMT
-YyMjMzMDYxMSwtMTM2MDgyMDY5Nl19
+eyJoaXN0b3J5IjpbLTMxMzc4OTkyOCwxNjI1NjA0NDc1LC0xNT
+QyMTE3NDg2LC0xNjIyMzMwNjExLC0xMzYwODIwNjk2XX0=
 -->
