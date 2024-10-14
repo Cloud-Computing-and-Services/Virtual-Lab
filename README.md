@@ -73,27 +73,25 @@ volumes:
 
 </code></pre>
 <ul>
-<li><strong><strong>container_name</strong>: Specify the name of the WordPress container as "wordpress".</li>
+<li><strong>container_name</strong>: Specify the name of the WordPress container as "wordpress".</li>
 <li><strong>ports</strong>: We map port 8080 on the host to port 80 on the container, allowing access to WordPress via <a href="http://localhost:8080">http://localhost:8080</a>.</li>
 <li><strong>restart</strong>: We ensure that the container restarts automatically if it stops or encounters an error.</li>
 <li><strong>volumes</strong>: We create a volume named "/wp_data" and mount it in the container's "/var/www/html" directory. This allows WordPress files to be stored outside the container, preserving the data even if the container is stopped or removed.</li>
-<li><strong><strong>environment</strong>: The environment variables are used to specify the connection between WordPress and the MySQL container.</li>
+<li><strong>environment</strong>: The environment variables are used to specify the connection between WordPress and the MySQL container.</li>
 <li><strong>deploy</strong>: We set the resource limits for the container, including CPU and memory limitations.</li>
 <li><strong>network</strong>: We connect the WordPress container to the "wordpressNetwork" network.</li>
-</ul>.
-<p><strong>docker-compose.yaml</strong></p>.
-<pre><code>version: '3.8'
-
+</ul>
+<p><strong>docker-compose.yaml</strong></p>
+<pre><code>
+version: '3.8'
 services:
-
-wordpress:
-image: wordpress:latest
-
-
+  wordpress:
+    image: wordpress:latest
 networks:
-vlab_network:
-name: vlab_network
-driver: bridge
+    vlab_network:
+        name: vlab_network
+        driver: bridge
+
 </code></pre>
 <ul>
 <li>We run the WordPress service using the WordPress Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
@@ -229,6 +227,6 @@ external: true
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MzQ5OTQ1NCwtMTYyMjMzMDYxMSwtMT
-M2MDgyMDY5Nl19
+eyJoaXN0b3J5IjpbMzg2MjAzMzQ2LC0xNjIyMzMwNjExLC0xMz
+YwODIwNjk2XX0=
 -->
