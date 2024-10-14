@@ -71,7 +71,6 @@ services:
 volumes:
     data:
       driver: local
-
 </code></pre>
 <ul>
 <li><strong>container_name</strong>: Specify the name of the WordPress container as "wordpress".</li>
@@ -236,6 +235,6 @@ networks:
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ5NjMwOTAyLDE2MjU2MDQ0NzUsLTE1ND
+eyJoaXN0b3J5IjpbNTc4OTA3OTEyLDE2MjU2MDQ0NzUsLTE1ND
 IxMTc0ODYsLTE2MjIzMzA2MTEsLTEzNjA4MjA2OTZdfQ==
 -->
