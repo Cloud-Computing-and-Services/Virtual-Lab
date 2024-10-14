@@ -41,7 +41,9 @@
 <p>The WordPress container is the main page for the project, allowing the creation and management of web pages.</p>
 <p><strong>Configuration</strong></p>
 <p>To implement the WordPress container, we use two Docker Compose files: <code>docker-compose.yaml</code> and <code>docker-compose.override.yaml</code>.</p>
+
 <p><strong>docker-compose.override.yaml</strong></p>
+
 <pre><code>version: '3.8'
 services: 
     wordpress:
@@ -234,6 +236,6 @@ networks:
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3MDEzMTM4LDE2MjU2MDQ0NzUsLTE1ND
+eyJoaXN0b3J5IjpbNTQ5NjMwOTAyLDE2MjU2MDQ0NzUsLTE1ND
 IxMTc0ODYsLTE2MjIzMzA2MTEsLTEzNjA4MjA2OTZdfQ==
 -->
