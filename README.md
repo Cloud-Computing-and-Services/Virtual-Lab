@@ -2,6 +2,9 @@
 
 
 ---
+![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/255px-Flag_of_the_United_Kingdom_%281-2%29.svg.png)
+
+
 # Department of Informatics and Computer Engineering
 
 ## Cloud Computing and Services Laboratory
@@ -86,7 +89,7 @@ services:
 volumes:
     data:
       driver: local
-
+``
 
 
 
@@ -317,5 +320,5 @@ networks:
 <p>Μαζί, αυτά τα αρχεία Docker Compose διαμορφώνουν και αναπτύσσουν το container του phpMyAdmin, διασφαλίζοντας ότι είναι συνδεδεμένο στο καθορισμένο δίκτυο και έχει πρόσβαση στους απαραίτητους πόρους και volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMjA2OTAyOF19
+eyJoaXN0b3J5IjpbLTEzNjA0MzEwNDFdfQ==
 -->
