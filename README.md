@@ -84,7 +84,7 @@ volumes:
 
 <p><strong>docker-compose.yaml</strong></p>
 
-<pre><code class="lang-yaml">version: '3.8'
+<pre><>version: '3.8'
 
 services:
 
@@ -96,10 +96,7 @@ networks:
     vlab_network:
         name: vlab_network
         driver: bridge
-
-
 </code></pre>
-``ya
 <ul>
 <li>We run the WordPress service using the WordPress Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.</li>
 <li>With <strong>"networks"</strong> we connect the WordPress container to the "vlab_network" network. We name the network separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"</li>
@@ -245,6 +242,6 @@ networks:
 <p>Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzU0ODMzMSwxNjI1NjA0NDc1LC0xNT
+eyJoaXN0b3J5IjpbLTY2NzcwNjg3NywxNjI1NjA0NDc1LC0xNT
 QyMTE3NDg2LC0xNjIyMzMwNjExLC0xMzYwODIwNjk2XX0=
 -->
