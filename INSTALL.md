@@ -57,7 +57,8 @@ echo "Starting WordPress..."
 
 up_containers
 
-exit 0 ---
+exit 0
+</pre></code>
 
 <ul>
 <li>
@@ -169,6 +170,6 @@ exit 0
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEyNTU5NzU5LDE2MDYzMzExNTAsLTMxOD
+eyJoaXN0b3J5IjpbNjkxNDc0MjU2LDE2MDYzMzExNTAsLTMxOD
 A1NDU2OF19
 -->
