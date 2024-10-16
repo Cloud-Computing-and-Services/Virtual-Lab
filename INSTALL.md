@@ -31,7 +31,9 @@
 <p>The shell scripts <a href="http://up.sh">up.sh</a> and <a href="http://down.sh">down.sh</a> automate the process of automatically running services and shutting them down respectively.</p>
 <h2 id="up.sh"><a href="http://up.sh">up.sh</a></h2>
 
-<pre><code>#!/bin/bash
+[source, bash]  
+----
+#!/bin/bash
 
 
 NETWORK="vlab_network"
@@ -57,7 +59,7 @@ echo "Starting WordPress..."
 up_containers
 
 exit 0
-</code></pre>
+---
 <ul>
 <li>
 <p><strong>NETWORK:</strong> The name of the Docker network to be created.</p>
@@ -168,5 +170,5 @@ exit 0
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODA1NDU2OF19
+eyJoaXN0b3J5IjpbMTYwNjMzMTE1MCwtMzE4MDU0NTY4XX0=
 -->
