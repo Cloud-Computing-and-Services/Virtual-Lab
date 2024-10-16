@@ -12,6 +12,7 @@
 
 # Work items
 
+<<<<<<< HEAD
 **Lab Manager:** [Anagnostopoulos Apostolos](https://ice.uniwa.gr/emd_person/17574/)  
 **Delivery date:** 25/6/2024  
 **Submission Deadline:** 25/6/2024
@@ -98,6 +99,7 @@ To install and configure this project, follow these steps:
 
 1. Clone the repository by running the command
 
+<<<<<<< HEAD
 ```
 git clone https://github.com/Cloud-Computing-and-Services/Virtual-Lab.git
 ```
