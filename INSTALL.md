@@ -12,7 +12,6 @@
 
 # Work items
 
-<<<<<<< HEAD
 **Lab Manager:** [Anagnostopoulos Apostolos](https://ice.uniwa.gr/emd_person/17574/)  
 **Delivery date:** 25/6/2024  
 **Submission Deadline:** 25/6/2024
@@ -98,8 +97,6 @@ exit 0
 To install and configure this project, follow these steps:
 
 1. Clone the repository by running the command
-
-<<<<<<< HEAD
 ```
 git clone https://github.com/Cloud-Computing-and-Services/Virtual-Lab.git
 ```
@@ -129,7 +126,7 @@ Use phpMyAdmin to manage the MySQL database and configure the database for WordP
 
 To stop the services from running, follow these steps:
 
-1. Go to the install directory, where the bash scripts that automate starting and stopping the project are located
+1. Go to the `install` directory, where the bash scripts that automate starting and stopping the project are located
 ```
 cd install
 ```
