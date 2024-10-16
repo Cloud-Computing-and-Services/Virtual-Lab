@@ -1,7 +1,3 @@
----
-
----
-
 ![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/255px-Flag_of_Greece.svg.png)
 
 # Τμήμα Μηχανικών Πληροφορικής και Υπολογιστών 
