@@ -1,8 +1,8 @@
 ![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/255px-Flag_of_the_United_Kingdom_%281-2%29.svg.png)
 
-# Department of Informatics and Computer Engineering 
+# [Department of Informatics and Computer Engineering](https://ice.uniwa.gr/) 
 
-# Cloud Computing and Services
+# [Cloud Computing and Services](https://ice.uniwa.gr/education/undergraduate/courses/cloud-services/)
 
 # Create Virtual Lab
 

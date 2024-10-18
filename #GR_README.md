@@ -1,8 +1,8 @@
 ![Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/255px-Flag_of_Greece.svg.png)
 
-## Τμήμα Μηχανικών Πληροφορικής και Υπολογιστών
+## [Τμήμα Μηχανικών Πληροφορικής και Υπολογιστών](https://ice.uniwa.gr/)
 
-### Εργαστήριο Υπολογιστικής Νέφους και Υπηρεσιών
+### [Υπολογιστική Νέφους και Υπηρεσιών](https://ice.uniwa.gr/education/undergraduate/courses/cloud-services/)
 
 ### Δημιουργία Εικονικού Εργαστηρίου
 
