@@ -10,3 +10,4 @@ networks:
     vlab_network:
         name: vlab_network
         driver: bridge
+        external: true
