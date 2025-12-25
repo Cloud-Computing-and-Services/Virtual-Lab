@@ -1,17 +1,37 @@
-![Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/255px-Flag_of_the_United_Kingdom_%281-2%29.svg.png)
+<p align="center">
+  <img src="https://www.especial.gr/wp-content/uploads/2019/03/panepisthmio-dut-attikhs.png" alt="UNIWA" width="150"/>
+</p>
 
-## [Department of Informatics and Computer Engineering](https://ice.uniwa.gr/)
+<p align="center">
+  <strong>UNIVERSITY OF WEST ATTICA</strong><br>
+  SCHOOL OF ENGINEERING<br>
+  DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
+</p>
 
-### [Cloud Computing and Services](https://ice.uniwa.gr/education/undergraduate/courses/cloud-services/)
+<hr/>
 
-### Create Virtual Lab
+<p align="center">
+  <strong>Cloud Computing and Services</strong>
+</p>
 
----
+<h1 align="center" style="letter-spacing: 1px;">
+  Virtual Lab – Dockerized Cloud Services
+</h1>
 
-### Team Members
+<p align="center">
+  <strong>Vasileios Evangelos Athanasiou</strong><br>
+  Student ID: 19390005<br>
+  <strong>Georgios Theocharis</strong><br>
+  Student ID: 19390283<br>  
+</p>
 
-- Athanasiou Vasileios Evangelos | ice19390005
-- Theocharis Georgios | 19390283
+<p align="center">
+  Supervisor: Apostolos Anagnostopoulos, Special Technical Laboratory Staff<br>
+</p>
+
+<p align="center">
+  Athens, June 2024
+</p>
 
 ---
 
