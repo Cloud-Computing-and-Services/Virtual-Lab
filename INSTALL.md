@@ -35,7 +35,7 @@
 
 # Installation and Configuration Instructions
 
-The shell scripts [up.sh](install/) and [down.sh](install/) automate the process of automatically running services and shutting them down respectively.
+The shell scripts [up.sh](src/install/) and [down.sh](src/install/) automate the process of automatically running services and shutting them down respectively.
 
 ## up.sh
 

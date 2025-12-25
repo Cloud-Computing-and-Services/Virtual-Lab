@@ -41,6 +41,15 @@ This project was created for the cloud computing lab and provides a virtual lab 
 
 ---
 
+## Table of Contents
+
+| Section | Title          | Description                                    |
+|--------:|----------------|------------------------------------------------|
+| assign  | Assignment     | Contains assignments and tasks                 |
+| src     | Source Code    | All source code files and implementations      |
+
+---
+
 ### Features
 
 The Docker project has the following features:
