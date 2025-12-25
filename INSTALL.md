@@ -109,7 +109,7 @@ git clone https://github.com/Cloud-Computing-and-Services/Virtual-Lab.git
 ```
 2. Go to the project directory by pressing the command
 ```
-cd Virtual-Lab
+cd Virtual-Lab/src
 ```
 3. Go to the install directory, where the bash scripts that automate the startup and shutdown of the project are located
 ```
