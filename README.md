@@ -20,13 +20,29 @@
 
 <p align="center">
   <strong>Vasileios Evangelos Athanasiou</strong><br>
-  Student ID: 19390005<br>
+  Student ID: 19390005
+</p>
+
+<p align="center">
+  <a href="https://github.com/Ath21" target="_blank">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/vasilis-athanasiou-7036b53a4/" target="_blank">LinkedIn</a>
+</p>
+
+<p align="center">
   <strong>Georgios Theocharis</strong><br>
-  Student ID: 19390283<br>  
+  Student ID: 19390283
+</p>
+
+<p align="center">
+  <a href="https://github.com/geotheo01" target="_blank">GitHub</a>
 </p>
 
 <p align="center">
   Supervisor: Apostolos Anagnostopoulos, Special Technical Laboratory Staff<br>
+</p>
+
+<p align="center">
+  <a href="https://ice.uniwa.gr/emd_person/17574/" target="_blank">UNIWA Profile</a>
 </p>
 
 <p align="center">
@@ -43,10 +59,32 @@ This project was created for the cloud computing lab and provides a virtual lab 
 
 ## Table of Contents
 
-| Section | Title          | Description                                    |
-|--------:|----------------|------------------------------------------------|
-| assign  | Assignment     | Contains assignments and tasks                 |
-| src     | Source Code    | All source code files and implementations      |
+| Section | Folder / File | Description |
+|------:|---------------|-------------|
+| 1 | `assign/` | Virtual Lab assignment material |
+| 1.1 | `assign/exercise-2024.adoc.pdf` | Assignment description in English |
+| 1.2 | `assign/άσκηση-2024.adoc.pdf` | Assignment description in Greek |
+| 2 | `src/` | Source files and installation scripts for the lab environment |
+| 2.1 | `src/install/` | Scripts for environment setup |
+| 2.1.1 | `down.sh` | Script to bring down the lab environment |
+| 2.1.2 | `up.sh` | Script to start the lab environment |
+| 2.2 | `src/MySQL/` | MySQL service configuration |
+| 2.2.1 | `docker-compose.yaml` | Default MySQL Compose configuration |
+| 2.2.2 | `docker-compose.override.yaml` | Overrides for MySQL Compose setup |
+| 2.3 | `src/phpMyAdmin/` | phpMyAdmin service configuration |
+| 2.3.1 | `docker-compose.yaml` | Default phpMyAdmin Compose configuration |
+| 2.3.2 | `docker-compose.override.yaml` | Overrides for phpMyAdmin Compose setup |
+| 2.4 | `src/Wordpress/` | Wordpress service configuration |
+| 2.4.1 | `docker-compose.yaml` | Default Wordpress Compose configuration |
+| 2.4.2 | `docker-compose.override.yaml` | Overrides for Wordpress Compose setup |
+| 3 | `.git/` | Git repository metadata and hooks (hidden) |
+| 3.1 | `hooks/` | Git sample hooks (`pre-commit`, `pre-push`, etc.) |
+| 3.2 | `logs/` | Git commit and reference logs |
+| 3.3 | `objects/` | Git object storage |
+| 3.4 | `refs/` | Git references (branches, remotes, tags) |
+| 3.5 | `COMMIT_EDITMSG`, `HEAD`, `config`, `index`, etc. | Core Git control files |
+| 4 | `INSTALL.md` | Instructions to install and set up the Virtual Lab |
+| 5 | `README.md` | Repository overview and usage instructions |
 
 ---
 

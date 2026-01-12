@@ -20,9 +20,21 @@
 
 <p align="center">
   <strong>Vasileios Evangelos Athanasiou</strong><br>
-  Student ID: 19390005<br>
+  Student ID: 19390005
+</p>
+
+<p align="center">
+  <a href="https://github.com/Ath21" target="_blank">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/vasilis-athanasiou-7036b53a4/" target="_blank">LinkedIn</a>
+</p>
+
+<p align="center">
   <strong>Georgios Theocharis</strong><br>
-  Student ID: 19390283<br>  
+  Student ID: 19390283
+</p>
+
+<p align="center">
+  <a href="https://github.com/geotheo01" target="_blank">GitHub</a>
 </p>
 
 <p align="center">
@@ -30,8 +42,14 @@
 </p>
 
 <p align="center">
+  <a href="https://ice.uniwa.gr/emd_person/17574/" target="_blank">UNIWA Profile</a>
+</p>
+
+<p align="center">
   Athens, June 2024
 </p>
+
+---
 
 # Installation and Configuration Instructions
 
