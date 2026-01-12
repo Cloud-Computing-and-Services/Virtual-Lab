@@ -77,14 +77,8 @@ This project was created for the cloud computing lab and provides a virtual lab 
 | 2.4 | `src/Wordpress/` | Wordpress service configuration |
 | 2.4.1 | `docker-compose.yaml` | Default Wordpress Compose configuration |
 | 2.4.2 | `docker-compose.override.yaml` | Overrides for Wordpress Compose setup |
-| 3 | `.git/` | Git repository metadata and hooks (hidden) |
-| 3.1 | `hooks/` | Git sample hooks (`pre-commit`, `pre-push`, etc.) |
-| 3.2 | `logs/` | Git commit and reference logs |
-| 3.3 | `objects/` | Git object storage |
-| 3.4 | `refs/` | Git references (branches, remotes, tags) |
-| 3.5 | `COMMIT_EDITMSG`, `HEAD`, `config`, `index`, etc. | Core Git control files |
-| 4 | `INSTALL.md` | Instructions to install and set up the Virtual Lab |
-| 5 | `README.md` | Repository overview and usage instructions |
+| 3 | `INSTALL.md` | Instructions to install and set up the Virtual Lab |
+| 4 | `README.md` | Repository overview and usage instructions |
 
 ---
 
