@@ -38,7 +38,14 @@
 </p>
 
 <p align="center">
-  Supervisor: Apostolos Anagnostopoulos, Special Technical Laboratory Staff<br>
+  Supervisor: Vasileios Mamalis, Professor
+</p>
+<p align="center">
+  <a href="https://ice.uniwa.gr/en/emd_person/vassilios-mamalis/" target="_blank">UNIWA Profile</a>
+</p>
+
+<p align="center">
+  Co-supervisor: Apostolos Anagnostopoulos, Special Technical Laboratory Staff<br>
 </p>
 
 <p align="center">
