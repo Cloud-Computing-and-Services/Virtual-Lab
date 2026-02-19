@@ -8,6 +8,11 @@
   DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
 </p>
 
+<p align="center">
+  <a href="https://www.uniwa.gr" target="_blank">University of West Attica</a> ·
+  <a href="https://ice.uniwa.gr" target="_blank">Department of Computer Engineering and Informatics</a>
+</p>
+
 <hr/>
 
 <p align="center">
@@ -37,11 +42,25 @@
   <a href="https://github.com/geotheo01" target="_blank">GitHub</a>
 </p>
 
+<hr>
+
+<p align="center">
+  <strong>Supervision</strong>
+</p>
+
 <p align="center">
   Supervisor: Vasileios Mamalis, Professor
 </p>
 <p align="center">
   <a href="https://ice.uniwa.gr/en/emd_person/vassilios-mamalis/" target="_blank">UNIWA Profile</a>
+</p>
+
+<p align="center">
+  Supervisor: Dimitrios Kallergis, Applications Lecturer
+</p>
+<p align="center">
+  <a href="https://ice.uniwa.gr/en/emd_person/20972/" target="_blank">UNIWA Profile</a> ·
+    <a href="https://www.linkedin.com/in/dkallergis/" target="_blank">LinkedIn</a>
 </p>
 
 <p align="center">
@@ -52,13 +71,25 @@
   <a href="https://ice.uniwa.gr/emd_person/17574/" target="_blank">UNIWA Profile</a>
 </p>
 
+</hr>
+
+---
+
 <p align="center">
   Athens, June 2024
 </p>
 
 ---
 
-# Project Overview
+<p align="center">
+  <img src="https://images.ctfassets.net/o7xu9whrs0u9/4sYuVlC3grWV9xqiALyYr2/a52875856c016db3eb86c1d8adced886/Docker.logo2_.png" width="250"/>
+</p>
+
+---
+
+# README
+
+## Virtual Lab – Dockerized Cloud Services
 
 This project was created for the cloud computing lab and provides a virtual lab environment using Docker. Its purpose is to facilitate the development and management of various applications by providing many features and services. This README file briefly describes the project, its features, and the services used.
 
@@ -66,30 +97,30 @@ This project was created for the cloud computing lab and provides a virtual lab 
 
 ## Table of Contents
 
-| Section | Folder / File | Description |
-|------:|---------------|-------------|
-| 1 | `assign/` | Virtual Lab assignment material |
-| 1.1 | `assign/exercise-2024.adoc.pdf` | Assignment description in English |
-| 1.2 | `assign/άσκηση-2024.adoc.pdf` | Assignment description in Greek |
-| 2 | `src/` | Source files and installation scripts for the lab environment |
-| 2.1 | `src/install/` | Scripts for environment setup |
-| 2.1.1 | `down.sh` | Script to bring down the lab environment |
-| 2.1.2 | `up.sh` | Script to start the lab environment |
-| 2.2 | `src/MySQL/` | MySQL service configuration |
-| 2.2.1 | `docker-compose.yaml` | Default MySQL Compose configuration |
-| 2.2.2 | `docker-compose.override.yaml` | Overrides for MySQL Compose setup |
-| 2.3 | `src/phpMyAdmin/` | phpMyAdmin service configuration |
-| 2.3.1 | `docker-compose.yaml` | Default phpMyAdmin Compose configuration |
-| 2.3.2 | `docker-compose.override.yaml` | Overrides for phpMyAdmin Compose setup |
-| 2.4 | `src/Wordpress/` | Wordpress service configuration |
-| 2.4.1 | `docker-compose.yaml` | Default Wordpress Compose configuration |
-| 2.4.2 | `docker-compose.override.yaml` | Overrides for Wordpress Compose setup |
-| 3 | `INSTALL.md` | Instructions to install and set up the Virtual Lab |
-| 4 | `README.md` | Repository overview and usage instructions |
+| Section | Folder / File                   | Description                                                   |
+| ------: | ------------------------------- | ------------------------------------------------------------- |
+|       1 | `assign/`                       | Virtual Lab assignment material                               |
+|     1.1 | `assign/exercise-2024.adoc.pdf` | Assignment description in English                             |
+|     1.2 | `assign/άσκηση-2024.adoc.pdf`   | Assignment description in Greek                               |
+|       2 | `src/`                          | Source files and installation scripts for the lab environment |
+|     2.1 | `src/install/`                  | Scripts for environment setup                                 |
+|   2.1.1 | `down.sh`                       | Script to bring down the lab environment                      |
+|   2.1.2 | `up.sh`                         | Script to start the lab environment                           |
+|     2.2 | `src/MySQL/`                    | MySQL service configuration                                   |
+|   2.2.1 | `docker-compose.yaml`           | Default MySQL Compose configuration                           |
+|   2.2.2 | `docker-compose.override.yaml`  | Overrides for MySQL Compose setup                             |
+|     2.3 | `src/phpMyAdmin/`               | phpMyAdmin service configuration                              |
+|   2.3.1 | `docker-compose.yaml`           | Default phpMyAdmin Compose configuration                      |
+|   2.3.2 | `docker-compose.override.yaml`  | Overrides for phpMyAdmin Compose setup                        |
+|     2.4 | `src/Wordpress/`                | Wordpress service configuration                               |
+|   2.4.1 | `docker-compose.yaml`           | Default Wordpress Compose configuration                       |
+|   2.4.2 | `docker-compose.override.yaml`  | Overrides for Wordpress Compose setup                         |
+|       3 | `INSTALL.md`                    | Instructions to install and set up the Virtual Lab            |
+|       4 | `README.md`                     | Repository overview and usage instructions                    |
 
 ---
 
-### Features
+## 1. Features
 
 The Docker project has the following features:
 
@@ -101,7 +132,7 @@ The Docker project has the following features:
 
 ---
 
-### Used Services
+## 2. Used Services
 
 The Docker project uses the following services:
 
@@ -111,9 +142,9 @@ The Docker project uses the following services:
 
 ---
 
-### Detailed Description of Services
+## 3. Detailed Description of Services
 
-#### WordPress Container
+### 3.1 WordPress Container
 
 The WordPress container is the main page for the project, allowing the creation and management of web pages.
 
@@ -124,35 +155,36 @@ To implement the WordPress container, we use two Docker Compose files: `docker-c
 **docker-compose.override.yaml**
 
 ```yaml
-version: '3.8'
+version: "3.8"
 
-services: 
-    wordpress:
-        container_name: wordpress
-        ports:
-         - '8080:80'
-        restart: always
-        volumes:
-         - /wp_data:/var/www/html
-        environment:
-         WORDPRESS_DB_HOST: database
-         WORDPRESS_DB_USER: wordpress
-         WORDPRESS_DB_PASSWORD: apostolos
-         WORDPRESS_DB_NAME: wordpress
-        deploy:
-          resources:
-            limits:
-              cpus: '0.10'
-              memory: 500M
-            reservations:
-              cpus: '0.05'
-              memory: 50M 
-        networks:
-          - vlab_network
+services:
+  wordpress:
+    container_name: wordpress
+    ports:
+      - "8080:80"
+    restart: always
+    volumes:
+      - /wp_data:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: apostolos
+      WORDPRESS_DB_NAME: wordpress
+    deploy:
+      resources:
+        limits:
+          cpus: "0.10"
+          memory: 500M
+        reservations:
+          cpus: "0.05"
+          memory: 50M
+    networks:
+      - vlab_network
 volumes:
-    data:
-      driver: local
+  data:
+    driver: local
 ```
+
 - **container_name:** Specify the name of the WordPress container as "wordpress".
 - **ports:** We map port 8080 on the host to port 80 on the container, allowing access to WordPress via http://localhost:8080.
 - **restart:** We ensure that the container restarts automatically if it stops or encounters an error.
@@ -162,28 +194,26 @@ volumes:
 - **network:** We connect the WordPress container to the "wordpressNetwork" network.
 
 **docker-compose.yaml**
+
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
-
   wordpress:
     image: wordpress:latest
-   
-      
+
 networks:
-    vlab_network:
-        name: vlab_network
-        driver: bridge
+  vlab_network:
+    name: vlab_network
+    driver: bridge
 ```
+
 - We run the WordPress service using the WordPress Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.
 - With **"networks"** we connect the WordPress container to the "vlab_network" network. We name the network separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"
 
 Together, these Docker Compose files configure and deploy the WordPress container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.
 
----
-
-#### MySQL Container
+### 3.2 MySQL Container
 
 The MySQL container hosts the database used by WordPress.
 
@@ -194,38 +224,39 @@ To implement the MySQL container, we use two Docker Compose files: `docker-compo
 **docker-compose.override.yaml**
 
 ```yaml
-version: '3.8'
+version: "3.8"
 
-services: 
-    database:
-        container_name: mysql_database
-        ports:
-         - '3306:3306'
-        restart: always
-        volumes:
-         - /db_data:/var/lib/mysql
-        environment:
-         MYSQL_ROOT_PASSWORD: apostolos
-         MYSQL_DATABASE: wordpress
-         MYSQL_USER: wordpress
-         MYSQL_PASSWORD: apostolos
-        
-        deploy:
-         resources:
-            limits:
-              cpus: '0.10'
-              memory: 500M
-            reservations:
-              cpus: '0.05'
-              memory: 50M         
-        
-        networks:
-          - vlab_network
+services:
+  database:
+    container_name: mysql_database
+    ports:
+      - "3306:3306"
+    restart: always
+    volumes:
+      - /db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: apostolos
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: apostolos
+
+    deploy:
+      resources:
+        limits:
+          cpus: "0.10"
+          memory: 500M
+        reservations:
+          cpus: "0.05"
+          memory: 50M
+
+    networks:
+      - vlab_network
 
 volumes:
-    data:
-        driver: local
+  data:
+    driver: local
 ```
+
 - **container_name:** Specify the name of the MySQL container as "mysql".
 - **ports:** We map the host port 3306 to the container port 3306, allowing access to the database through the MySQL client.
 - **restart:** We ensure that the container restarts automatically if it stops or encounters an error.
@@ -235,28 +266,26 @@ volumes:
 - **network:** We connect the MySQL container to the "vlab_network" network.
 
 **docker-compose.yaml**
+
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
-
   database:
     image: mysql:5.7
-   
-      
+
 networks:
-    vlab_network:
-        driver: bridge
-        external: true
+  vlab_network:
+    driver: bridge
+    external: true
 ```
+
 - We run the MySQL service using the MySQL Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.
 - With **"networks"** we connect the MySQL container to the "vlab_network" network. We define the network name separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"
 
 Together, these Docker Compose files configure and deploy the MySQL container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.
 
----
-
-#### phpMyAdmin Container
+### 3.3 phpMyAdmin Container
 
 The phpMyAdmin container provides a graphical interface for managing the MySQL database.
 
@@ -267,33 +296,34 @@ To implement the phpMyAdmin container, we use two Docker Compose files: `docker-
 **docker-compose.override.yaml**
 
 ```yaml
-version: '3.8'
+version: "3.8"
 
-services: 
-    phpmyadmin:
-        container_name: phpMyAdmin_CLI
-        ports:
-         - '8081:80'
-        restart: always
-        environment:
-          PMA_HOST: database
-          PMA_USER: wordpress
-          PMA_PASSWORD: apostolos
-        deploy:
-          resources:
-            limits:
-              cpus: '0.10'
-              memory: 200M
-            reservations:
-              cpus: '0.05'
-              memory: 50M         
- 
-        networks:
-          - vlab_network
+services:
+  phpmyadmin:
+    container_name: phpMyAdmin_CLI
+    ports:
+      - "8081:80"
+    restart: always
+    environment:
+      PMA_HOST: database
+      PMA_USER: wordpress
+      PMA_PASSWORD: apostolos
+    deploy:
+      resources:
+        limits:
+          cpus: "0.10"
+          memory: 200M
+        reservations:
+          cpus: "0.05"
+          memory: 50M
+
+    networks:
+      - vlab_network
 volumes:
-    data:
-      driver: local
+  data:
+    driver: local
 ```
+
 - **container_name:** Specify the name of the phpMyAdmin container as "phpmyadmin".
 - **ports:** We map port 8081 on the host to port 80 on the container, allowing access to phpMyAdmin via http://localhost:8081.
 - **restart:** We ensure that the container restarts automatically if it stops or encounters an error.
@@ -302,21 +332,25 @@ volumes:
 - **network:** We connect the phpMyAdmin container to the "vlab_network" network.
 
 **docker-compose.yaml**
+
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
-
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-   
-      
+
 networks:
-    vlab_network:
-        driver: bridge
-        external: true
+  vlab_network:
+    driver: bridge
+    external: true
 ```
+
 - We run the phpMyAdmin service using the phpMyAdmin Docker Image, which is pulled from Docker Hub with the latest tag if the image does not already exist on the machine.
 - With **"networks"** we connect the phpMyAdmin container to the "vlab_network" network. We define the network name separately in the networks section, specifying its name as "vlab_network" and the driver as "bridge"
+
+---
+
+## 4. Conclusion
 
 Together, these Docker Compose files configure and deploy the phpMyAdmin container, ensuring that it is connected to the specified network and has access to the necessary resources and volumes.

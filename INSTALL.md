@@ -8,6 +8,11 @@
   DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
 </p>
 
+<p align="center">
+  <a href="https://www.uniwa.gr" target="_blank">University of West Attica</a> ·
+  <a href="https://ice.uniwa.gr" target="_blank">Department of Computer Engineering and Informatics</a>
+</p>
+
 <hr/>
 
 <p align="center">
@@ -37,11 +42,25 @@
   <a href="https://github.com/geotheo01" target="_blank">GitHub</a>
 </p>
 
+<hr>
+
+<p align="center">
+  <strong>Supervision</strong>
+</p>
+
 <p align="center">
   Supervisor: Vasileios Mamalis, Professor
 </p>
 <p align="center">
   <a href="https://ice.uniwa.gr/en/emd_person/vassilios-mamalis/" target="_blank">UNIWA Profile</a>
+</p>
+
+<p align="center">
+  Supervisor: Dimitrios Kallergis, Applications Lecturer
+</p>
+<p align="center">
+  <a href="https://ice.uniwa.gr/en/emd_person/20972/" target="_blank">UNIWA Profile</a> ·
+    <a href="https://www.linkedin.com/in/dkallergis/" target="_blank">LinkedIn</a>
 </p>
 
 <p align="center">
@@ -52,17 +71,31 @@
   <a href="https://ice.uniwa.gr/emd_person/17574/" target="_blank">UNIWA Profile</a>
 </p>
 
+</hr>
+
+---
+
 <p align="center">
   Athens, June 2024
 </p>
 
 ---
 
-# Installation and Configuration Instructions
+<p align="center">
+  <img src="https://images.ctfassets.net/o7xu9whrs0u9/4sYuVlC3grWV9xqiALyYr2/a52875856c016db3eb86c1d8adced886/Docker.logo2_.png" width="250"/>
+</p>
+
+---
+
+# INSTALL
+
+## Virtual Lab – Dockerized Cloud Services
 
 The shell scripts [up.sh](src/install/up.sh) and [down.sh](src/install/down.sh) automate the process of automatically running services and shutting them down respectively.
 
-## up.sh
+---
+
+## 1. up.sh
 
 ```bash
 #!/bin/bash
@@ -75,7 +108,7 @@ COMPOSE_FILE="docker-compose.yaml"
 COMPOSE_FILE_OVERRIDE="docker-compose.override.yaml"
 
 up_containers() {
-docker network create $NETWORK 
+docker network create $NETWORK
 
 echo "Starting MySQL..."
 (cd $MYSQL && docker compose -f $COMPOSE_FILE -f $COMPOSE_FILE_OVERRIDE up -d)
@@ -91,6 +124,7 @@ up_containers
 
 exit 0
 ```
+
 - **NETWORK:** The name of the Docker network to be created.
 - **WORDPRESS:** The filepath where the docker-compose files for running the Wordpress service are located.
 - **MYSQL:** The filepath where the docker-compose files for running the MySQL service are located.
@@ -98,7 +132,10 @@ exit 0
 - **COMPOSE_FILE:** The name of the main Docker Compose file that creates the image of each service and configures the network.
 - **COMPOSE_FILE_OVERRIDE:** The name of the Docker Compose override file that contains all the configs for each service.
 
-## down.sh
+---
+
+## 2. down.sh
+
 ```bash
 #!/bin/bash
 
@@ -126,44 +163,70 @@ down_containers
 
 exit 0
 ```
+
+---
+
+## 3. Install & Setup
+
 To install and configure this project, follow these steps:
 
-1. Clone the repository by running the command
+### 3.1 Clone the repository by running the command
+
 ```
 git clone https://github.com/Cloud-Computing-and-Services/Virtual-Lab.git
 ```
-2. Go to the project directory by pressing the command
+
+### 3.2 Go to the project directory by pressing the command
+
 ```
 cd Virtual-Lab/src
 ```
-3. Go to the install directory, where the bash scripts that automate the startup and shutdown of the project are located
+
+### 3.3 Go to the install directory, where the bash scripts that automate the startup and shutdown of the project are located
+
 ```
 cd install
 ```
-4. Start the project by running the bash script by pressing the command
+
+### 3.4 Start the project by running the bash script by pressing the command
+
 ```
 ./up.sh
 ```
-5. Open your browser and visit the services at the following links:
+
+### 3.5 Open your browser and visit the services at the following links:
+
 - Wordpress
-http://localhost:8080
+  http://localhost:8080
 
 - MySQL
-http://localhost:3306
+  http://localhost:3306
 
 - phpMyAdmin
-http://localhost:8081
+  http://localhost:8081
 
 Use phpMyAdmin to manage the MySQL database and configure the database for WordPress.
 
+---
+
+## 4. Stop
+
 To stop the services from running, follow these steps:
 
-1. Go to the `install` directory, where the bash scripts that automate starting and stopping the project are located
+### 4.1 Go to the `install` directory, where the bash scripts that automate starting and stopping the project are located
+
 ```
 cd install
 ```
-2. Terminate the project by running the bash script by pressing the command
+
+### 4.2 Terminate the project by running the bash script by pressing the command
+
 ```
 ./down.sh
 ```
+
+---
+
+## 5. Conclusion
+
 To summarize, with the above shell scripts we can create or remove the containers of the 3 services of the application. Removing the containers includes removing the network that the containers communicate with. The data volumes remain as they are.
